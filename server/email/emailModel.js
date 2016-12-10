@@ -67,9 +67,9 @@ var email = {
   newSend: function(req, res) {
     console.log('NEW SEND REQ: ', req.body);
     var user;
-    Users.find({_id:req.body.userId}, function(err, result) {
+    Users.find({_id:req.body.data.userId}, function(err, result) {
       var user = result[0];
-      var options = templates.newApp(user, req.body);
+      var options = templates.newApp(user, req.body.data);
       transporter.sendMail(options, function(err, info) {
         if(err) { return console.log('ERROR: ', err); }
         console.log('NEW APP Message Sent: ', info.response);
