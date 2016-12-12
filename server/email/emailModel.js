@@ -65,7 +65,6 @@ var email = {
     })
   },
   newSend: function(req, res) {
-    console.log('NEW SEND REQ: ', req.body);
     var user;
     Users.find({_id:req.body.data.userId}, function(err, result) {
       var user = result[0];
