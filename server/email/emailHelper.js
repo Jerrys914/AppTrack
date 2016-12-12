@@ -12,7 +12,7 @@ var weeklyReminderSender = function() {
         //user = users[i]
         //console.log('I !!!!!!!!!!!!!: ', i)
         (function(index){
-        Apps.find({userId:users[index].id}, function(err, apps) {
+        Apps.find({userId:users[index].id, isOpen:true}, function(err, apps) {
           var userApps = apps;
           console.log('USER!!!!: ', users[index])
           if(userApps.length > 0) {
