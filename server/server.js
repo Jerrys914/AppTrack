@@ -28,10 +28,15 @@ mongoose.Promise = global.Promise;
 const port = process.env.PORT || 5000;
 
 app.listen(port, (err) => {
+  reminded = false;
   if (err) {
     console.log('Error occurred : ', err);
   } else {
-   // weeklyReminder(); uncomment to start weekly reminder function
+    while(!reminded){
+      console.log('Server start func')
+      weeklyReminder(); // uncomment to start weekly reminder function
+      reminded = true;
+    }
     console.log('Server is listening to port : ', port);
   }
 });
