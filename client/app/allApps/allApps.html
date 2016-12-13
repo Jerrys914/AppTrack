@@ -34,51 +34,51 @@
         <div><span>{{result.dateApplied.slice(0,10)}}</span></div>
 
         <!-- i) COMPANY -->
-        <div id="field" ng-click="enableEditor($index)"><strong>Company:</strong><br>
+        <div ng-click="enableEditor($index)"><strong>Company:</strong><br>
           <span ng-hide="edit[$index].editorEnabled">{{result.companyName}}</span>
         </div>
         <div ng-show="edit[$index].editorEnabled">
-          <input ng-model="edit[$index].companyName" id="field" class="form-control" type="text">
+          <input ng-model="edit[$index].companyName" class="form-control" type="text">
         </div>
 
         <!-- ii) POSITION -->
-        <div id="field" ng-click="enableEditor($index)"><strong>Position:</strong><br>
+        <div ng-click="enableEditor($index)"><strong>Position:</strong><br>
           <span ng-hide="edit[$index].editorEnabled">{{result.role}}</span>
         </div>
         <div ng-show="edit[$index].editorEnabled">
-          <input ng-model="edit[$index].role" id="field" class="form-control" type="text">
+          <input ng-model="edit[$index].role" class="form-control" type="text">
         </div>
 
         <!-- iii) APPLIED THROUGH -->
-        <div id="field" ng-click="enableEditor($index)"><strong>Applied Through:</strong><br>
+        <div ng-click="enableEditor($index)"><strong>Applied Through:</strong><br>
           <span ng-hide="edit[$index].editorEnabled">{{result.appliedThrough}}</span>
         </div>
         <div ng-show="edit[$index].editorEnabled">
-          <input ng-model="edit[$index].appliedThrough" id="field" class="form-control" type="text">
+          <input ng-model="edit[$index].appliedThrough" class="form-control" type="text">
         </div>
 
         <!-- iv) CONTACT NAME -->
-        <div id="field" ng-click="enableEditor($index)"><strong>Contact Name:</strong><br>
+        <div ng-click="enableEditor($index)"><strong>Contact Name:</strong><br>
           <span ng-hide="edit[$index].editorEnabled">{{result.contactName}}</span>
         </div>
         <div ng-show="edit[$index].editorEnabled">
-          <input ng-model="edit[$index].contactName" id="field" class="form-control" type="text">
+          <input ng-model="edit[$index].contactName" class="form-control" type="text">
         </div>
 
         <!-- v) CONTACT EMAIL -->
-        <div id="field" ng-click="enableEditor($index)"><strong>Contact Email:</strong><br>
+        <div ng-click="enableEditor($index)"><strong>Contact Email:</strong><br>
           <span ng-hide="edit[$index].editorEnabled">{{result.contactEmail}}</span>
         </div>
         <div ng-show="edit[$index].editorEnabled">
-          <input ng-model="edit[$index].contactEmail" id="field" class="form-control" type="text">
+          <input ng-model="edit[$index].contactEmail" class="form-control" type="text">
         </div>
 
         <!-- vi) CONTACT PHONE -->
-        <div id="field" ng-click="enableEditor($index)"><strong>Contact Phone:</strong><br>
+        <div ng-click="enableEditor($index)"><strong>Contact Phone:</strong><br>
           <span ng-hide="edit[$index].editorEnabled">{{result.contactPhone}}</span>
         </div>
         <div ng-show="edit[$index].editorEnabled">
-          <input ng-model="edit[$index].contactPhone" id="field" class="form-control" type="text">
+          <input ng-model="edit[$index].contactPhone" class="form-control" type="text">
         </div>
 
         <!-- Save Button -->
@@ -92,11 +92,11 @@
       <!-- Displays Stage Data -->
       <div id="stage-name" ng-repeat="stage in results[$index].stages track by $index" ng-model="results">
         <div><h3>STAGE {{$index + 1}}</h3></div>
-        <div id="field"><strong>Interview Type:</strong><br>{{stage.interviewType}}</div>
-        <div id="field"><strong>Date:</strong><br>{{stage.interviewCompletedDate.slice(0,10)}}</div>
-        <div id="field"><strong>Primary Interviewer Type:</strong><br>{{stage.interviewerType}}</div>
-        <div id="field"><strong>Last Follow Up Date:</strong><br>{{stage.dateOfLastFollowUp.slice(0,10)}}</div>
-        <div id="field"><strong>Reply Received:</strong><br>{{stage.interviewReplyReceived}}</div>
+        <div><strong>Interview Type:</strong><br>{{stage.interviewType}}</div>
+        <div><strong>Date:</strong><br>{{stage.interviewCompletedDate.slice(0,10)}}</div>
+        <div><strong>Primary Interviewer Type:</strong><br>{{stage.interviewerType}}</div>
+        <div><strong>Last Follow Up Date:</strong><br>{{stage.dateOfLastFollowUp.slice(0,10)}}</div>
+        <div><strong>Reply Received:</strong><br>{{stage.interviewReplyReceived}}</div>
       </div>
 
       <!-- Displays Add Stage Card -->
@@ -116,17 +116,17 @@
 
         <div>
           <label>Date Completed</label>
-          <input id="field" class="form-control" type="date" ng-model="stageattrs.interviewCompletedDate" required>
+          <input class="form-control" type="date" ng-model="stageattrs.interviewCompletedDate" required>
         </div>
         <div>
           <label>Interviewer</label>
-          <input id="field" class="form-control" type="text" ng-model="stageattrs.interviewerType" required>
+          <input class="form-control" type="text" ng-model="stageattrs.interviewerType" required>
         </div>
         <div>
           <label>Date of Last Follow Up</label>
-          <input id="field" class="form-control" type="date" ng-model="stageattrs.dateOfLastFollowUp" required>
+          <input class="form-control" type="date" ng-model="stageattrs.dateOfLastFollowUp" required>
         </div>
-        <div id="field">Reply Received  <input type="checkbox" ng-model="stageattrs.interviewReplyReceived" required></div>
+        <div Reply Received  <input type="checkbox" ng-model="stageattrs.interviewReplyReceived" required></div>
         <br>
         <button type="submit" ng-click="pushToStages($index)" class="btn btn-info" id='btn-info'>Submit Stage</button>
       </div>
