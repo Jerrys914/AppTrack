@@ -12,12 +12,12 @@ angular.module('at', [
 
 .config(($routeProvider, $locationProvider, $httpProvider) => {
   $routeProvider
-  .when('/', {
+  .when('/home', {
     templateUrl: './app/allApps/allApps.html',
     controller: 'AllAppsController',
     authenticate: true,
   })
-  .when('/home', {
+  .when('/', {
     templateUrl: './app/cover/cover.html'
   })
   .when('/addApps', {
@@ -42,7 +42,7 @@ angular.module('at', [
     templateUrl: './app/account/account.html',
     controller: 'AccountController'
   })
-  .otherwise({ redirectTo: '/' });
+  .otherwise({ redirectTo: '/home' });
 
   $httpProvider.interceptors.push('AttachTokens'); // will attach token to the localStorage
 })
