@@ -13,7 +13,8 @@ input {
 body {
   font-family: 'Raleway', sans-serif;
 }
-// Overwriting Bootstrap Navbar default colors //
+
+// Overwriting Bootstrap btn default colors //
 
 #navbar-fixed-top {
   background-color: #232323;
@@ -29,44 +30,11 @@ body {
   border-style: none;
 }
 
-#body-font {
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
-#offer {
-  float: right;
-  padding-right: 20%;
-}
-
-#first {
-  float: left;
-  padding-left: 20%;
-}
-
-#second {
-  float: right;
-  padding-right: 20%;
-}
-
-col {
-  column-width: 50%;
-}
-
-#outreach {
-  min-width: 100%;
-}
-
-#field {
-  padding: 10px;
-  font-size: large;
-}
-
-.mdl-textfield__input {
-  padding: 15px;
-}
-
 #card {
-  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #b7b7b7;
+  border-radius: 5px;
   width: 300px;
   height: 450px;
   margin: 20px 20px 0 20px;
@@ -79,12 +47,11 @@ col {
   background-color: #edeff4;
 }
 
-#search-one {
-  display: inline-block;
-}
-
 .add-stage {
-  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #b7b7b7;
+  border-radius: 5px;
   font-size: medium;
   width: 300px;
   height: 450px;
@@ -96,15 +63,18 @@ col {
 }
 
 #list-item {
-    width: 90%;
-    height:600px;
-    display:inline-block;
-    margin-top: 30px;
-    overflow: scroll;
+  width: 90%;
+  height:600px;
+  display:inline-block;
+  margin-top: 30px;
+  overflow: scroll;
 }
 
 #stage-name {
-  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #b7b7b7;
+  border-radius: 5px;
   width: 300px;
   height: 450px;
   font-size: large;
@@ -116,32 +86,7 @@ col {
   padding: 15px;
 }
 
-#positions {
-  margin:auto;
-  overflow:scroll;
-}
-
-.button {
-    -moz-appearance: button;
-    /* Firefox */
-    -webkit-appearance: button;
-    /* Safari and Chrome */
-    padding: 10px;
-    margin: 10px;
-    width: 70px;
-}
-.drop-box {
-    background: #F8F8F8;
-    border: 5px dashed #DDD;
-    width: 200px;
-    height: 65px;
-    text-align: center;
-    padding-top: 25px;
-    margin: 10px;
-}
-.dragover {
-    border: 5px dashed blue;
-}
+// Sign in and Log in Page CSS //
 
 .form-signin {
   max-width: 330px;
@@ -201,6 +146,5 @@ ul {
 
 .page-header h2 {
   text-transform: uppercase;
-  font-weight: 600;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
 }
