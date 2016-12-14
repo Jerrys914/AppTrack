@@ -89,6 +89,14 @@ module.exports = {
 	  applicationModel.findByIdAndRemove(req.params.id, function(err, removed) {
 	    res.send(removed);
 	  });
+  },
+
+  userData(req, res) {
+    var decrypted = jwt.decode(req.headers['x-access-token'], 'apptrak');
+    console.log("REQUEST HEADERS FOR USER DATA: ", req.headers);
+    applicationModel.findApplication()
+
   }
+
 
 };
