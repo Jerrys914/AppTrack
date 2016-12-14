@@ -1,5 +1,5 @@
 h1, h2, h3 {
-  text-align: center;
+   text-align: center;
 }
 
 input {
@@ -12,6 +12,11 @@ input {
 
 body {
   font-family: 'Raleway', sans-serif;
+}
+
+.page-header h2 {
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 // Overwriting Bootstrap btn default colors //
@@ -63,11 +68,11 @@ body {
 }
 
 #list-item {
-  width: 90%;
-  height:600px;
-  display:inline-block;
-  margin-top: 30px;
-  overflow: scroll;
+    width: 90%;
+    height:600px;
+    display:inline-block;
+    margin-top: 30px;
+    overflow: scroll;
 }
 
 #stage-name {
@@ -85,8 +90,6 @@ body {
   display: block;
   padding: 15px;
 }
-
-// Sign in and Log in Page CSS //
 
 .form-signin {
   max-width: 330px;
@@ -142,9 +145,4 @@ body {
 
 ul {
   padding-left: 0;
-}
-
-.page-header h2 {
-  text-transform: uppercase;
-  font-weight: bold;
 }
