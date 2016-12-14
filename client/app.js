@@ -12,13 +12,13 @@ angular.module('at', [
 
 .config(($routeProvider, $locationProvider, $httpProvider) => {
   $routeProvider
-  .when('/home', {
+  .when('/', {
+    templateUrl: './app/cover/cover.html',
+  })
+  .when('/allApps', {
     templateUrl: './app/allApps/allApps.html',
     controller: 'AllAppsController',
     authenticate: true,
-  })
-  .when('/', {
-    templateUrl: './app/cover/cover.html'
   })
   .when('/addApps', {
     templateUrl: './app/addApps/addApps.html',
