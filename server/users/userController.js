@@ -64,5 +64,12 @@ module.exports = {
 			const decoded = jwt.decode(req.headers['x-access-token'], 'apptrak');
 			res.send(decoded.username);
 		}
-	}
+	},
+
+
+  userData(req, res) {
+    var decrypted = jwt.decode(req.headers['x-access-token'], 'apptrak');
+    userModel.findOne()
+
+  }
 }

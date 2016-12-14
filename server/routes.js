@@ -10,6 +10,8 @@ router.post('/api/users/signup', userController.signUp);
 router.post('/api/users/signin', userController.signIn);
 router.get('/api/users', userController.sendUsername);
 
+router.get('/api/account', userController.userData);
+
 router.post('/api/form', applicationController.createApplication);
 
 // get request endpoint for $http get request made in the getData factory function.

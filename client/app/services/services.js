@@ -79,7 +79,13 @@ angular.module('at.services', [])
       })
     });
 
-  return { postData, getData, putStageData, removeStage, putEditData, deleteApp };
+  const getUserData = () => $http({
+    method: 'GET',
+    url: '/api/account'
+  })
+    .then((resp) => resp.data);
+
+  return { postData, getData, putStageData, removeStage, putEditData, deleteApp, getUserData };
 })
 
 .factory('Auth', ($http, $location, $window) => {
