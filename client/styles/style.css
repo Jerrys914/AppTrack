@@ -14,6 +14,11 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+.page-header h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 // Overwriting Bootstrap btn default colors //
 
 #navbar-fixed-top {
